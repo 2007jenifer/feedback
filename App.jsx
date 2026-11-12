@@ -17,7 +17,7 @@ function App() {
   const getFeedbacks = async () => {
     try {
       const response = await axios.get(
-        "https://feedback-backend-qjde.onrender.com//api/feedback"
+        "https://feedback-backend-qjde.onrender.com/api/feedback"
       );
 
       setFeedbacks(response.data);
@@ -43,7 +43,7 @@ function App() {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/feedback",
+        "https://feedback-backend-qjde.onrender.com/api/feedback",
         feedback
       );
 
